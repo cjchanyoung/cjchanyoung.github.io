@@ -69,3 +69,25 @@ nav ul li a:hover { color: #00d1ff; }
 .btn:hover { background: #008fb3; transform: scale(1.05); }
 
 footer { text-align: center; padding: 50px; color: #666; font-size: 0.9rem; }
+
+/* Update the section padding and create a container */
+section {
+    padding: 80px 0; /* Vertical padding only */
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px; /* 고정 폭 (Fixed Width) */
+    margin: 0 auto;    /* 가운데 정렬 (Center Alignment) */
+    padding: 0 20px;   /* 모바일에서 양끝 여백 유지 */
+}
+
+/* Update hero section for consistency */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 0;
+}

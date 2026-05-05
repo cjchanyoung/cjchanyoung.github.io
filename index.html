@@ -3,53 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chanyoung | Developer Portfolio</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
-        header { text-align: center; padding: 50px 0; background: #333; color: white; border-radius: 10px; }
-        section { background: white; padding: 20px; margin-top: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #333; border-bottom: 2px solid #333; padding-bottom: 5px; }
-        .project-card { border-left: 5px solid #007bff; padding-left: 15px; }
-        .tag { background: #007bff; color: white; padding: 3px 8px; border-radius: 5px; font-size: 0.8em; }
-    </style>
+    <title>Chanyoung | Technical Artist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Hi, I'm Chanyoung! 👋</h1>
-    <p>Aspiring Game Developer & Tech Enthusiast</p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>I am a developer who believes in the power of <strong>"Leveling Up"</strong>—both in games and in real life. Whether it's optimizing a script in Unity or hitting a new PR at the gym, I love the process of growth.</p>
-    <p>Outside of coding, I'm a passionate <strong>Volleyball player (Setter)</strong> and a dedicated learner currently prepping for the IELTS exam.</p>
-</section>
-
-<section>
-    <h2>Featured Project</h2>
-    <div class="project-card">
-        <h3>Health.GG <span class="tag">In Progress</span></h3>
-        <p>A gamified fitness application where your real-world workout stats dictate your character's growth.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Charles.Chanyoung</div>
         <ul>
-            <li>Implementing unique ranking algorithms based on user biometrics.</li>
-            <li>Built with Unity & C#.</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#code">Problem Solving</a></li>
         </ul>
-        <a href="https://github.com/cjchanyoung/Health.GG">View Source Code →</a>
-    </div>
-</section>
+    </nav>
 
-<section>
-    <h2>Technical Arsenal</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, Java, C++, HTML/CSS, SQL</li>
-        <li><strong>Engines:</strong> Unity, Unreal Engine</li>
-    </ul>
-</section>
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <h1>Hi, I'm <span class="highlight">Chanyoung (Charles)</span></h1>
+        <p class="subtitle">Aspiring <strong>Engine Architect</strong> & <strong>Technical Artist</strong></p>
+        <p>Computer Science Major | Transitioning to Macquarie University, Australia</p>
+        <p>Focused on High-Performance Optimization and Real-time Rendering.</p>
+    </section>
 
-<footer>
-    <p style="text-align: center; color: #888;">&copy; 2026 Chanyoung. Built with passion.</p>
-</footer>
+    <!-- Tech Stack Section -->
+    <section id="tech">
+        <h2>Technical Skills</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <h3>Languages</h3>
+                <p>C++ (Pointers/Memory Management), Java, Python, JavaScript</p>
+            </div>
+            <div class="tech-card">
+                <h3>Graphics & Engine</h3>
+                <p>Unreal Engine, Shader Programming, Blender</p>
+            </div>
+            <div class="tech-card">
+                <h3>Infrastructure</h3>
+                <p>MySQL, Git, GitHub Pages, Linux Environments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Health.GG</h3>
+                <p>A gamified fitness service that synchronizes wearable device data with interactive game mechanics to enhance user engagement.</p>
+                <span class="tags">C++, Unreal Engine, Database Integration</span>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <!-- Problem Solving Section -->
+    <section id="code">
+        <h2>Problem Solving</h2>
+        <p>Continuous learning through algorithmic challenges and low-level code implementations.</p>
+        <a href="https://github.com/cjchanyoung" class="btn">Explore GitHub Archives</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Charles Chanyoung. Built with a Passion for **Optimization**.</p>
+    </footer>
 
 </body>
 </html>

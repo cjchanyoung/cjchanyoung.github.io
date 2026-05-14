@@ -1,9 +1,15 @@
+if RUBY_VERSION >= '3.2'
+  Object.send(:define_method, :tainted?) { false }
+  Object.send(:define_method, :taint) { self }
+  Object.send(:define_method, :untaint) { self }
+end
+
 source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem "wdm", ">= 0.2.0" if Gem.win_platform?
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -14,4 +20,11 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "csv"
+  gem "bigdecimal"
+  gem "webrick"
+  gem "base64"
+  gem "ostruct"
+  gem "logger"
+  gem "mutex_m"
 end

@@ -1,0 +1,13 @@
+{% if page.title %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+{% else %}
+  <title>{{ site.title }}</title>
+{% endif %}
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+{% if page.next %}
+  <link rel="next" href="{{ page.next.url | absolute_url }}">
+{% endif %}
+{% if page.previous %}
+  <link rel="prev" href="{{ page.previous.url | absolute_url }}">
+{% endif %}
